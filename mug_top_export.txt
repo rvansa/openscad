@@ -1,0 +1,56 @@
+ 
+Cost
+Machine time cost is 4.78$.
+Material cost is 5.66$.
+Total cost is 10.44$.
+ 
+Extent
+X axis extrusion starts at 39 mm and ends at 141 mm, for a width of 101 mm.
+Y axis extrusion starts at 39 mm and ends at 141 mm, for a depth of 101 mm.
+Z axis extrusion starts at 0 mm and ends at 7 mm, for a height of 7 mm.
+ 
+Extruder
+Build time is 57 minutes 23 seconds.
+Distance extruded is 111385.2 mm.
+Distance traveled is 118425.5 mm.
+Extruder speed is 34.0
+Extruder was extruding 94.1 percent of the time.
+Extruder was toggled 984 times.
+Operating flow rate is 3.0 mm3/s.
+Feed rate average is 34.4 mm/s, (2063.6 mm/min).
+ 
+Filament
+Cross section area is 0.076 mm2.
+Extrusion diameter is 0.31 mm.
+Volume fraction is 0.82.
+ 
+Material
+Mass extruded is 8.1 grams.
+Volume extruded is 8.4 cc.
+ 
+Meta
+Text has 21570 lines and a size of 921.0 KB.
+Version is 12.03.14
+ 
+Procedures
+carve
+preface
+inset
+fill
+multiply
+speed
+temperature
+raft
+skirt
+chamber
+clip
+dimension
+alteration
+ 
+Profile
+ABS-normal-RedHat-red
+ 
+Slice
+Edge width is 0.37 mm.
+Layer height is 0.25 mm.
+ 
