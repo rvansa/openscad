@@ -32,8 +32,8 @@ translate([-box_w/2, -box_l/2, base_h])
         translate([(box_w - usb_w) / 2, box_l - usb_l, -0.5])
             union() {
                 cube([usb_w, usb_l + 1, usb_h + 1]);
-                translate([-1.5, 3, 0])    cube([2, 1.5, usb_h + 1]);
-                translate([usb_w - 0.5, 3, 0]) cube([2, 1.5, usb_h + 1]);
+                translate([-1.5, 2, 0])    cube([2, 1.5, usb_h + 1]);
+                translate([usb_w - 0.5, 2, 0]) cube([2, 1.5, usb_h + 1]);
             }
         // channels
         translate([(box_w - usb_w) / 2, 2, -0.5])
