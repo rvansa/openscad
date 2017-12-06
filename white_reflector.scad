@@ -49,8 +49,10 @@ difference() {
             translate([0, 0, -9 - cone_h]) cylinder(r1=3.5, r2=rr, h=cone_h);
             translate([0, 0, -9.1 - cone_h]) cylinder(r1=1.5, r2=rr - 2, h=cone_h + 0.2);
         }
-        translate([0, rr - 2, -4]) rotate([-90, 0, 0]) cylinder(r=bolt_r - 0.1, h=4);
-        translate([0, -rr + 2, -4]) rotate([90, 0, 0]) cylinder(r=bolt_r - 0.1, h=4);
+        translate([0, rr - 2, -4]) rotate([-90, 0, 0])
+            cylinder(r1=bolt_r, r2=bolt_r - 1, h=4);
+        translate([0, -rr + 2, -4]) rotate([90, 0, 0])
+            cylinder(r1=bolt_r, r2=bolt_r - 1, h=4);
     }
     for (angle = [45:90:360])
         rotate([0, 0, angle]) translate([5, -1, -15]) cube([5, 2, 12]);
