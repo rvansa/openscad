@@ -13,7 +13,7 @@ difference() {
         difference() {
             translate([0, 0, -cylinder_h]) cylinder(r=inner_r + 3, h=base_h + cylinder_h);    
             for(angle = [0, 60, 120, 180]) rotate([0, 0, angle])
-                translate([inner_r - 1, 0, -0.5]) cylinder(r=0.5, h=base_h + 1);
+                translate([inner_r - 1, 0, -0.5]) cylinder(r=1, h=base_h + 1);
             translate([0, 0, -cylinder_h - 1]) cylinder(r=inner_r + 1, h=cylinder_h + 1);
             translate([0, 0, -0.5]) cylinder(r = inner_r - 3, h=base_h + 1);
         }
@@ -60,7 +60,9 @@ difference() {
     cube([2 * inner_r + 12, bolt_r * 2 + 6, hold_l]);
     translate([3, -1, 3]) cube([2 * inner_r + 6, bolt_r * 2 + 8, hold_l - 2]);
     translate([3.1, bolt_r + 3, hold_l - bolt_r - 3]) rotate([0, -90, 0])
-        cylinder(h = 4.2, r1=bolt_r + 0.5, r2=bolt_r - 0.5);
+        cylinder(h = 4.2, r=bolt_r);
     translate([2 * inner_r + 8.9, bolt_r + 3, hold_l - bolt_r - 3]) rotate([0, 90, 0])
-        cylinder(h = 4.2, r1=bolt_r + 0.5, r2=bolt_r - 0.5);
+        cylinder(h = 4.2, r=bolt_r);
+    translate([inner_r + 6, bolt_r + 3, -0.5]) cylinder(r=1.5,h=4, $fn=8);
+    translate([inner_r + 6, bolt_r + 3, 2]) cylinder(r1=1.5, r2=3, h=2, $fn=8);
 }
