@@ -2,7 +2,7 @@ rr=10;
 t=1.8;
 cone_h=12;
 bolt_r=3;
-hold_l=32;
+hold_l=60;
 
 // lid
 //translate([0, 0, 5.2])
