@@ -17,7 +17,7 @@ dy = 101.85;
 dz = 10;
 
 // lid
-difference() {
+* difference() {
     minkowski() {
         cube([plate_x, plate_y, 1]);
         cylinder(r = 5, h = 1);
@@ -32,7 +32,7 @@ difference() {
 
 
 // shell
-*difference() {
+difference() {
     minkowski() {
         cube([plate_x, plate_y, box_h - 1]);
         cylinder(r = 5, h = 1);
